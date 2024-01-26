@@ -18,10 +18,8 @@
 - Docker イメージのビルドの記述・Tex文書のコンパイル: `Makefile`
   - `make` でイメージのビルドと文書のコンパイルを行う．`texlive-custom`というイメージが作成される 
   - `make clean` で中間ファイルの削除
-- LaTex のコンパイルレシピ: `latexmkrc`
-  - コンパイルエンジンを定義
-- LaTex 文書の記述: `main.tex`
-  - `main.tex` がメイン文書
+- コンパイルレシピ: `latexmkrc`
+- LaTeX 文書の記述: `main.tex`
 - LaTeX Workshop の設定: `.vscode/settings.json`
   - コンパイルを `texlive-image` にやらせるように設定
   - 自動コンパイル等の設定
@@ -29,5 +27,5 @@
   - `main.tex` 以外の main.* をgit で無視
 
 ## Usage
-- はじめに `make` でイメージをビルドする
+- はじめに `make` でイメージをビルドする. Docker が必要． Docker Desktop などを立ち上げておく．
 - 執筆 
